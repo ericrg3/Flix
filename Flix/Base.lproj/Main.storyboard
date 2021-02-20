@@ -53,7 +53,7 @@
                                             <outlet property="posterView" destination="f0D-UC-f0c" id="NXF-Df-3eH"/>
                                             <outlet property="synopsisLabel" destination="vCK-ZG-khp" id="DKx-AN-0a0"/>
                                             <outlet property="titleLabel" destination="nea-Uy-0B0" id="KZa-G3-Yse"/>
-                                            <segue destination="5eQ-F0-Ll9" kind="show" id="Vey-hI-wiG"/>
+                                            <segue destination="5eQ-F0-Ll9" kind="show" id="570-Zu-5ja"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -123,10 +123,10 @@
             </objects>
             <point key="canvasLocation" x="1173.913043478261" y="190.84821428571428"/>
         </scene>
-        <!--Movie Details View Controller-->
+        <!--Details View Controller-->
         <scene sceneID="hXy-Eg-kmS">
             <objects>
-                <viewController id="5eQ-F0-Ll9" customClass="MovieDetailsViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5eQ-F0-Ll9" customClass="DetailsViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o3y-xm-SX3" customClass="MovieDetailsViewController" customModule="Flix" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,14 +156,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VbD-l1-tG9"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <connections>
-                            <outlet property="backdropView" destination="viy-ig-1IM" id="UMd-Io-ZCX"/>
-                            <outlet property="posterView" destination="FMT-qV-wfa" id="Z0K-MM-1Xq"/>
-                            <outlet property="synopsisLabel" destination="8hA-LG-dGD" id="JUI-Wg-3i2"/>
-                            <outlet property="titleLabel" destination="ApL-p6-CFl" id="U2j-cP-yZD"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Kvw-TQ-hRM"/>
+                    <connections>
+                        <outlet property="backdropView" destination="viy-ig-1IM" id="26b-vr-XpH"/>
+                        <outlet property="posterView" destination="FMT-qV-wfa" id="JRm-kf-pda"/>
+                        <outlet property="synopsisLabel" destination="8hA-LG-dGD" id="Wu9-Cx-zvs"/>
+                        <outlet property="titleLabel" destination="ApL-p6-CFl" id="C1q-7R-Sgv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RvT-D4-awJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

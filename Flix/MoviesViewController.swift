@@ -83,9 +83,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let indexPath = tableView.indexPath(for:cell)!
         let movie = movies[indexPath.row]
         
-        let detailsViewController = segue.destination as! MovieDetailsViewController
+        let detailsViewController = segue.destination as! DetailsViewController
         detailsViewController.movie = movie
         
-        tableView.deselectRow(at: indexPath, animated: true)
+        //tableView.deselectRow(at: indexPath, animated: true)
 }
 }
